@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Vishwa-ops/jenkins-pipelines-demo.git'
-            }
-        }
-
         stage('Install') {
             steps {
                 sh 'npm install'
